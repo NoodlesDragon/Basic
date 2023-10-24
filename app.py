@@ -14,7 +14,7 @@ def add_2_numbers(num1, num2):
 
 
 app = Flask(__name__)
-app.config["SWAGGER"] = {"title": "Swagger-UI", "uiversion": 2}
+app.config["SWAGGER"] = {"title": "Swagger-UI"}
 
 swagger_config = {
     "headers": [],
