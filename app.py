@@ -60,4 +60,4 @@ def add_numbers():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8791)
+    app.run()
