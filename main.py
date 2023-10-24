@@ -1,4 +1,5 @@
 from flask import Flask, request
+from flask import Flask, render_template
 from flasgger import Swagger, LazyString, LazyJSONEncoder
 from flasgger import swag_from
 
@@ -34,7 +35,7 @@ swagger = Swagger(app, template=swagger_template,
 @swag_from("hello_world.yml", methods=['GET'])
 @app.route("/")
 def hello_world():
-    return "Hello World!!!"
+    return render_template("home.html")
 
 if __name__ == '__main__':
     app.run()
